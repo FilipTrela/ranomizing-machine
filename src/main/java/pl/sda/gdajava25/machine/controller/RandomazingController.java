@@ -16,11 +16,11 @@ public class RandomazingController {
 
     @GetMapping("/word")
     public String randomWord() {
-        return words[random.nextInt(11)];
+        return words[random.nextInt(words.length)];
     }
 
     @GetMapping("/number")
     public String randomNumber() {
-        return numbers[random.nextInt(11)];
+        return numbers[random.nextInt(numbers.length)];
     }
 }
